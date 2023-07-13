@@ -102,6 +102,7 @@ a:hover {
   overflow: hidden;
 }
 
+
 .text-overlay {
   position: absolute;
   top: 30px; /* 调整文字距离图片上边缘的距离 */
