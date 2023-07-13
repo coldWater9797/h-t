@@ -97,8 +97,19 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 1243px;
+   height: 1964px;
+  overflow: hidden;
+}
+.news-area{
+    position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: auto;
-  height: 750px;
+  height: auto;
   overflow: hidden;
 }
 
@@ -174,3 +185,5 @@ div.nav > div:hover {
   font-weight: normal;
   font-style: normal;
 }
+
+
