@@ -53,7 +53,7 @@ a:hover{
     background-size: cover;
 }
 
-.about-area,.contact-area{
+.about-area{
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -86,7 +86,17 @@ a:hover{
     height: auto;
     overflow: hidden;
 }
-
+.contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    height: 750px;
+    overflow: hidden;
+}
 
   .text-overlay {
     position: absolute;
