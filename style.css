@@ -9,7 +9,7 @@ body{
   top: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.60);
@@ -140,4 +140,21 @@ p{
 }
 html{
     scroll-behavior: smooth;
+}
+div.nav > div {
+    font-family: Vollkorn SC;
+    height: 100%;
+}
+div.nav > div a{
+   display: flex;
+   align-self: center;
+}
+div.nav > div:hover {
+    background-color: rgba(200, 16, 47, 0.5);
+}
+@font-face {
+    font-family: 'Vollkorn SC';
+    src: url('./assets/fonts/VollkornSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
