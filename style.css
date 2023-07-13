@@ -43,7 +43,7 @@ a{
 a:hover{
     color: #e71313;
 }
-.banner-area{
+.home-area{
     position: relative;
     background-image: url(images/Subtract.png);
     width: 100%;
@@ -53,7 +53,7 @@ a:hover{
     background-size: cover;
 }
 
-.about-area{
+.business-area{
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -64,7 +64,7 @@ a:hover{
   height: 750px;
   overflow: hidden;
 }
-.port-area{
+.about-us-area{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -75,7 +75,7 @@ a:hover{
     height: auto;
     overflow: hidden;
 }
-.service-area{
+.recruit-area{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -86,7 +86,7 @@ a:hover{
     height: auto;
     overflow: hidden;
 }
-.contact-area{
+.contact-us-area{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -97,6 +97,7 @@ a:hover{
     height: 750px;
     overflow: hidden;
 }
+
 
   .text-overlay {
     position: absolute;
