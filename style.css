@@ -97,7 +97,16 @@ a:hover{
     height: 750px;
     overflow: hidden;
 }
-
+.Footer{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1286.40px; height: 167.50px;
+    overflow: hidden;
+}
 
   .text-overlay {
     position: absolute;
