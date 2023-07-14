@@ -65,7 +65,7 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   width: auto;
-  height: 750px;
+  height: auto;
   overflow: hidden;
 }
 .about-us-area {
@@ -97,8 +97,8 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 1243px;
-   height: 1964px;
+  width: auto;
+   height: auto;
   overflow: hidden;
 }
 .news-area{
