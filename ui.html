@@ -1,162 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
 
     <style>
-    
-     
-body {
-background-image: url(img/marathon-slider-bg-copy.png);
- 
-}
-a, p {
-font-family: 'Roboto Condensed', sans-serif;
-}
-.cont-contactInfo {
-float: left;
-padding-right: 5%;
-width: 45%;
-}
+        body {
+            background-image: url(img/marathon-slider-bg-copy.png);
+
+        }
+
+        a,
+        p {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .cont-contactInfo {
+            float: left;
+            padding-right: 5%;
+            width: 45%;
+        }
 
 
-.cont-contactBtn {
-    position: relative;
-            top: -100px; /* 调整此值来改变位置 */
-height: 359px;
-margin: 0 auto;
-width: 574px;
-position: relative; 
-perspective: 800px;
-  border-radius: 50px;
+        .cont-contactBtn {
+            position: relative;
+            top: -100px;
+            /* 调整此值来改变位置 */
+            height: 550px;
+            margin: 0 auto;
+            width: 574px;
+            position: relative;
+            perspective: 800px;
+            border-radius: 50px;
 
-}
-.cont-contactBtn .cont-flip {
-position: absolute;
-transition: transform 0.5s;
-transform-style: preserve-3d;
-height: 100%;
-width: 100%;
-}
-.cont-contactBtn .cont-flip .front, .cont-contactBtn .cont-flip .back {
-display: block;
-margin: 0;
-height: 100%;
-width: 100%;
-position: absolute;
-backface-visibility: hidden;
-}
+        }
 
-.cont-contactBtn .cont-flip .back {
-background-color: #fff;   
-transform: rotateX(180deg);
-}
-.cont-contactBtn .btn {
-margin-top: 155px;
-}
-.cont-contactBtn .cont-flip.flipped { 
-transform: rotateX(180deg);
-}
-.cont-contactBtn .contact-form {
-padding: 0 10%;
-margin-top: 50px;
-width: 80%;
-}
-.cont-contactBtn .contact-form input, .cont-contactBtn .contact-form textarea {
-border: 1px solid #808080;
-font-size: 12px;
-padding: 10px 0;
-text-transform: uppercase;
-}
-.cont-contactBtn .contact-form input[type="text"] {
-float: left;
-margin-bottom: 8px;
-padding-left: 3%;
-width: 44.9%;
-  border-radius: 20px;
-}
-.cont-contactBtn .contact-form .gutter {
-margin-right: 2.8%;
-}
-.cont-contactBtn .contact-form textarea {
-height: 106px;
-padding-left: 3%;
-margin-bottom: 22px;
-width: 96.2%;
-  border-radius: 50px;
-}
-.cont-contactBtn .contact-form input[type="submit"] {
-background-color: #ff4d54;
-border: none;
-color: #fff;
-height: 45px;
-width: 100%;
-max-width: 93px;
-text-align: center;
-border-radius: 50px;
-}
-.cont-contactBtn .close {
-display: block;
-height: 19px;
-width: 19px;
-background-image: url('img/c.png');
-background-repeat: no-repeat;
-background-position: center;
-position: absolute;
-top: 15px;
-right: 3%;
-}
-.btn {
-border: 3px #fff solid;
-color: #fff;
-display: block;
-font-size: 18px;
-font-weight: normal;
-margin: 0 auto;
-max-width: 280px;
-padding: 15px 0;
-text-align: center;
-text-transform: uppercase;
-text-decoration: none;
-width: 70%;
-border-radius: 50px;
-background:#ff4d54;
-}
+        .cont-contactBtn .cont-flip {
+            position: absolute;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+            height: 100%;
+            width: 100%;
+        }
 
-    
-    
+        .cont-contactBtn .cont-flip .front,
+        .cont-contactBtn .cont-flip .back {
+            display: block;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .cont-contactBtn .cont-flip .back {
+            background-color: #fff;
+            transform: rotateX(180deg);
+        }
+
+        .cont-contactBtn .btn {
+            margin-top: 155px;
+        }
+
+        .cont-contactBtn .cont-flip.flipped {
+            transform: rotateX(180deg);
+        }
+
+        .cont-contactBtn .contact-form {
+            padding: 0 10%;
+            margin-top: 50px;
+            width: 80%;
+        }
+
+        .cont-contactBtn .contact-form input {
+            border: 1px solid #808080;
+            font-size: 12px;
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .cont-contactBtn .contact-form textarea {
+            border: 1px solid #808080;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .cont-contactBtn .contact-form input[type="text"]:not(.gyomu) {
+            float: left;
+            margin-bottom: 8px;
+            padding-left: 3%;
+            width: 44.9%;
+            border-radius: 20px;
+        }
+
+        .cont-contactBtn .contact-form .gutter {
+            margin-right: 2.8%;
+        }
+
+        .cont-contactBtn .contact-form .gyomu {
+            float: left;
+            margin-bottom: 8px;
+            padding-left: 3%;
+            border-radius: 20px;
+            width: 96%;
+        }
+
+        .cont-contactBtn .contact-form textarea {
+            height: 106px;
+            padding-left: 3%;
+            width: 96.2%;
+            border-radius: 20px;
+        }
+
+        #dtexa {
+            height: 106px;
+            border-radius: 20px;
+        }
+
+        .cont-contactBtn .contact-form input[type="submit"] {
+            background-color: #ff4d54;
+            border: none;
+            color: #fff;
+            height: 45px;
+            width: 100%;
+            max-width: 93px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .cont-contactBtn .close {
+            display: block;
+            height: 19px;
+            width: 19px;
+            background-image: url('img/c.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 15px;
+            right: 3%;
+        }
+
+        .btn {
+            border: 3px #fff solid;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0 auto;
+            max-width: 280px;
+            padding: 15px 0;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 70%;
+            border-radius: 50px;
+            background: #ff4d54;
+        }
+
+        .ppp {
+            font-size: 6px;
+            font-weight: 100;
+        }
+
+        .checkbox {
+            float: right;
+            left: 0;
+        }
     </style>
 </head>
+
 <body>
-   <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
     <div class="cont-contactBtn">
-                <div class="cont-flip">
-                    <div class="front">
-                        <a href="#" class="btn btn-white flip">Send Message</a>
-                    </div>
-                    <div class="back">
-                        <a href="#" class="flip close"></a>
-                        <form class="contact-form" action="">
-                            <input class="gutter" type="text" placeholder="Name">
-                            <input type="text" placeholder="Company">
-                            <input class="gutter" type="text" placeholder="Telephone">
-                            <input type="text" placeholder="Email">
-                            <textarea name="" id="" placeholder="Leave a message"></textarea>
-                            <input type="submit" value="Send">
-                        </form>
-                    </div>
-                </div>
-                <script>
-        
-        $(document).ready(function(){
-$('.flip').click(function(){
-$('.cont-flip').toggleClass('flipped');
-return false;
-});
-});
+        <div class="cont-flip">
+            <div class="front">
+                <a href="#" class="btn btn-white flip">Send Message</a>
+            </div>
+            <div class="back">
+                <a href="#" class="flip close"></a>
+                <form class="contact-form" action="">
+                    <input class="gutter" type="text" placeholder="お名前">
+                    <input type="text" placeholder="フリガナ">
+                    <input class="gutter" type="text" placeholder="メールアドレス">
+                    <input type="text" placeholder="電話番号">
+                    <input type="text" class="gyomu" placeholder="業務内容">
+                    <textarea name="" id="" placeholder="お問い合せ内容※"></textarea>
+                    <textarea readonly name="" id="dtexa" placeholder=" 株式会社H&T（以下、当社）は、当社へのお問い合わせを希望される方の個人情報を取得するにあたり、個人情報の取扱いに関する次の事項をご確認いただいております。以下の内容について、同意くださる方は上記の［同意する］ボックスにチェックを入れ、ご送信をお願いいたします。
+
+                    ◆組織の名称：株式会社H&T
+                
+                    ◆個人情報保護管理者
+                    保護管理者名：史　恒志
+                    所属部署：代表取締役
+                    連絡先：TEL：03-5829-4058
+                    ◆（お問い合わせ者に関する個人情報の利用目的）
+                    お問い合わせ者個人情報の利用目的は、お問い合わせ者の確定および連絡に使用いたします。
+                
+                    ◆（お問い合わせ者に関する個人情報の第三者提供）
+                
+                    お問い合わせ者に関する個人情報の第三者提供は行いません。
+                
+                    ◆（お問い合わせ者に関する個人情報の収集の任意性）
+                
+                    お問い合わせ者個人情報のご提供は、ご本人の判断により、任意ではございますが、ご提供いただけない場合は、お問い合わせにお答えできないことがあります。
+                
+                    ◆（お問い合わせ者に関する個人情報の開示、修正、利用停止等）
+                
+                    お問い合わせ者個人情報に関する、利用目的の通知、開示、修正、利用・提供の停止等のご請求につきましては、下記のお問い合わせ先までご連絡ください。当社は、ご本人であることを確認した場合に、お申し出に基づき、速やかに対応いたします。
+                
+                    開示等の手続につきましては、当社ホームページのお問い合わせ先にてご案内いたしております。
+                
+                    ◆（苦情・相談）
+                
+                    当社の個人情報の取扱い等に関しての苦情・相談がありましたら、下記お問い合わせ先までにご連絡ください。
+                
+                            株式会社H&T 　個人情報問合せ窓口
+                
+                            〒101-0025　東京都千代田区神田佐久間町２丁目７番地 第６東ビル６０３号室
+                
+                            メールアドレス：info@htsc.co.jp
+                
+                            TEL：03‐5829‐4058 （受付時間　10:00～18:00※）
+                
+                            ※ 土・日曜日、祝日、年末年始、ゴールデンウィーク期間は翌営業日以降の対応とさせていただきます。"></textarea>
+                    <p class="ppp">上記「個人情報に関する同意書」を同意するうえ、送信をお願い申し上げます。</p>
+                    <div class="checkbox"><input type="checkbox">同意する</div>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <script>
+
+            $(document).ready(function () {
+                $('.flip').click(function () {
+                    $('.cont-flip').toggleClass('flipped');
+                    return false;
+                });
+            });
         </script>
 </body>
+
 </html>
