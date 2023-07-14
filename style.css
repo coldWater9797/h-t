@@ -44,9 +44,6 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
-a:hover {
-  color: #e71313;
-}
 .home-area {
   position: relative;
   background-image: url(images/Subtract.png);
@@ -98,11 +95,11 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: row;
   width: 1243px;
-   height: 1964px;
+  height: 1964px;
   overflow: hidden;
 }
-.news-area{
-    position: relative;
+.news-area {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -113,15 +110,16 @@ a:hover {
   overflow: hidden;
 }
 
-.Footer{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 1286.40px; height: 167.50px;
-    overflow: hidden;
+.Footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 1286.4px;
+  height: 167.5px;
+  overflow: hidden;
 }
 
 .text-overlay {
@@ -185,5 +183,6 @@ div.nav > div:hover {
   font-weight: normal;
   font-style: normal;
 }
-
-
+.active {
+  color: red;
+}
