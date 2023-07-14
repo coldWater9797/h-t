@@ -174,9 +174,6 @@ div.nav > div a {
   display: flex;
   align-self: center;
 }
-div.nav > div:hover {
-  background-color: rgba(200, 16, 47, 0.5);
-}
 @font-face {
   font-family: "Vollkorn SC";
   src: url("./assets/fonts/VollkornSC-Regular.ttf");
