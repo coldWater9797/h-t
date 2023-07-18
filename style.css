@@ -117,8 +117,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 1286.4px;
-  height: 167.5px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 
