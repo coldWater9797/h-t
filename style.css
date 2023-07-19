@@ -17,6 +17,48 @@ body {
   /* height: 70px; */
   z-index: 1;
 }
+/* .top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 26px;
+  height: 65px;
+  background-color: #ffffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.top img {
+  width: 26px;
+  height: 65px;
+  filter: invert(100%);
+}
+ */
+
+ .scrollToTop {
+  width: 40px;
+  height:auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.68);
+  color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  z-index: 1;
+  transform: translate(80px,0);
+
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+cursor:pointer;
+}
+
 .logo-img {
   width: 100px;
   height: 50px;
