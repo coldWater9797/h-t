@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+/* def */
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  /* height: 70px; */
+  z-index: 1;
+}
+
+ 
+.logo-img {
+  width: 100px;
+  height: 50px;
+  left: 90px;
+  top: 0px;
+  position: absolute;
+}
+.nav {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  margin-right: 15%;
+}
+.logo {
+  flex: 1 1 auto;
+  margin-left: 10%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 35px;
+}
+a {
+  margin: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+div.nav > div {
+  font-family: Vollkorn SC;
+  height: 100%;
+}
+div.nav > div a {
+  display: flex;
+  align-self: center;
+}
+@font-face {
+  font-family: "Vollkorn SC";
+  src: url("./assets/fonts/VollkornSC-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.active {
+  color: red;
+}
+
+    </style>
 </head>
 <body>
+  <div class="navbar">
+    <div class="div-logo">
+        <a href="#" class="logo">
+            <img class="logo-img" src="images/a2.png" />
+        </a>
+    </div>
+    
+    <div class="nav">
+        <div><a href="index.html#home">HOME</a></div>
+        <div><a href="index.html#business">BUSINESS</a></div>
+        <div><a href="index.html#about_us">ABOUT US</a></div>
+        <div><a href="index.html#recruit">RECRUIT</a></div>
+        <div><a href="index.html#news">NEWS</a></div>
+        <div><a href="index.html#contact_us">CONTACT US</a></div>
+      
+    </div>
+</div>
+
       <div style="width: 1243px; height: 748px; position: relative; background: #EFEFEF">
         <div style="width: 1028px; height: 0px; left: 115px; top: 231px; position: absolute; border: 0.50px #DEDEDE solid"></div>
         <div style="left: 213px; top: 249px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.02 </div>
@@ -17,23 +109,45 @@
         <div style="left: 213px; top: 299px; position: absolute; color: black; font-size: 24px; font-family: Work Sans; font-weight: 100; letter-spacing: 3.60px; word-wrap: break-word">伊豆河津の早桜を鑑賞しました</div>
         <div style="width: 100px; height: 40px; left: 528px; top: 494px; position: absolute; background: #034E95"></div>
         <a href="index.html#news"><div style="left: 539px; top: 489px; position: absolute; color: white; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">一覧へ戻る</div></a>
-        <div style="width: 1246px; height: 165px; left: 0px; top: 583px; position: absolute; background: rgba(0, 0, 0, 0.50)"></div>
-        <div style="width: 1000px; height: 149px; left: 143px; top: 591px; position: absolute">
-          <img style="width: 87px; height: 51px; left: 69px; top: 0px; position: absolute" src="images/logo-m.png" />
-          <div style="width: 811px; height: 42px; left: 189px; top: 5px; position: absolute; color: white; font-size: 16px; font-family: Work Sans; font-weight: 400; line-height: 50px; word-wrap: break-word">〒101-0025      東京都千代田区神田佐久間町２丁目７番地 第６東ビル６０３号室</div>
-          <div style="left: 427px; top: 58px; position: absolute; color: white; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">about   us</div>
-          <div style="left: 0px; top: 57px; position: absolute; color: white; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">home</div>
-          <div style="left: 200px; top: 57px; position: absolute; color: white; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">business</div>
-          <div style="left: 668px; top: 56px; position: absolute; color: white; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">recruit</div>
-          <div style="left: 872px; top: 58px; position: absolute; color: white; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">contact   us</div>
-          <div style="width: 0px; height: 29.50px; left: 826px; top: 60px; position: absolute; border: 0.50px white solid"></div>
-          <div style="width: 0px; height: 29.50px; left: 609px; top: 60px; position: absolute; border: 0.50px white solid"></div>
-          <div style="width: 0px; height: 29.50px; left: 368px; top: 60px; position: absolute; border: 0.50px white solid"></div>
-          <div style="width: 0px; height: 29.50px; left: 130px; top: 60px; position: absolute; border: 0.50px white solid"></div>
-          <div style="width: 1000px; height: 0px; left: 0px; top: 101px; position: absolute; border: 0.50px white solid"></div>
-          <img style="width: 40px; height: 40px; left: 247px; top: 109px; position: absolute" src="images/a8.png" />
-          <div style="left: 305px; top: 119px; position: absolute; color: white; font-size: 16px; font-family: Work Sans; font-weight: 400; line-height: 20px; word-wrap: break-word">© Copyright 株式会社H&T. All Rights Reseved</div>
-        </div>
+    
+
+
+        <div  class="Footer" style="width: 1286.40px; height: 167.50px;left: 0px; top: 583px; position: relative; background: white">
+          <div style="width: 1286.40px; height: 167.50px; left: 0px; top: -1px; position: absolute; background: rgba(0, 0, 0, 0.50)"></div>
+          <img style="width: 87px; height: 51px; left: 201px; top: 3px; position: absolute" src="images/logo-m.png" />
+  
+          <div style="width: 811px; height: 42px; left: 321px; top: 8px; position: absolute; color: white; font-size: 16px; font-family: Work Sans; font-weight: 400; line-height: 50px; word-wrap: break-word">〒101-0025      東京都千代田区神田佐久間町２丁目７番地 第６東ビル６０３号室</div>
+          <a href="index.html#about_us"><div style="left: 453px; top: 63px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">about   us</div></a>
+          <a href="index.html#home"><div style="left: 101px; top: 62px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">home</div></a>
+          <a href="index.html#business"><div style="left: 259px; top: 62px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">business</div></a>
+          <a href="index.html#recruit"><div style="left: 653px; top: 61px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">recruit</div></a>
+          <a href="index.html#news"><div style="left: 836px; top: 63px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">news</div></a>
+          <div style="width: 0px; height: 29.50px; left: 786px; top: 65px; position: absolute; border: 0.50px white solid"></div>
+          <div style="width: 0px; height: 29.50px; left: 950px; top: 65px; position: absolute; border: 0.50px white solid"></div>
+          <div style="width: 0px; height: 29.50px; left: 603px; top: 65px; position: absolute; border: 0.50px white solid"></div>
+          <div style="width: 0px; height: 29.50px; left: 403px; top: 65px; position: absolute; border: 0.50px white solid"></div>
+          <div style="width: 0px; height: 29.50px; left: 209px; top: 65px; position: absolute; border: 0.50px white solid"></div>
+          <div style="width: 1000px; height: 0px; left: 101px; top: 106px; position: absolute; border: 0.50px white solid"></div>
+          <img class="Privacy223" style="width: 40px; height: 40px; left: 379px; top: 112px; position: absolute" src="images/a8.png" />
+         
+            <div class="CopyrightHTAllRightsReseved" style="left: 437px; top: 122px; position: absolute; color: white; font-size: 16px; font-family: Work Sans; font-weight: 400; line-height: 20px; word-wrap: break-word">© Copyright 株式会社H&T. All Rights Reseved</div>
+            <a href="index.html#contact_us"><div style="left: 1000px; top: 61px; position: absolute; color: white; font-size: 20px; font-family: 'Vollkorn SC'; font-weight: 400; word-wrap: break-word">contact   us</div></a>
+            </div>
       </div>
+      <script>
+        var na = document.querySelectorAll(".nav > div a")
+var da = document.querySelectorAll(".nav > div")
+for (var i = 0; i < na.length; i++)
+  na[i].addEventListener("click", function () {
+    for (var j = 0; j < na.length; j++) na[j].style.color = "white"
+    this.style.color = "black"
+  })
+for (var k = 0; k < na.length; k++)
+  da[k].addEventListener("click", function () {
+    for (var o = 0; o < na.length; o++) da[o].style.backgroundColor = ""
+    this.style.backgroundColor = "rgba(200, 16, 47, 0.5)"
+  })
+
+      </script>
 </body>
 </html>
