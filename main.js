@@ -1,3 +1,16 @@
+window.addEventListener("scroll", () => {
+  var os = document.querySelectorAll(".os")
+  var ns = document.querySelectorAll(".nav a")
+  var da = document.querySelectorAll(".nav div")
+  os.forEach((s, i) => {
+    if (window.scrollY >= s.offsetTop - 50) {
+      ns.forEach(n => n.classList.remove("ac"))
+      da.forEach(d => d.classList.remove("daa"))
+      ns[i].classList.add("ac")
+      da[i].classList.add("daa")
+    }
+  })
+})
 var na = document.querySelectorAll(".nav > div a")
 var da = document.querySelectorAll(".nav > div")
 for (var i = 0; i < na.length; i++)

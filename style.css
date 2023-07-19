@@ -3,7 +3,6 @@ body {
   padding: 0;
   font-family: Poppins;
 }
-/* def */
 .navbar {
   position: fixed;
   top: 0;
@@ -95,7 +94,7 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   width: auto;
-   height: auto;
+  height: auto;
   overflow: hidden;
 }
 .news-area {
@@ -180,6 +179,9 @@ div.nav > div a {
   font-weight: normal;
   font-style: normal;
 }
-.active {
-  color: red;
+.ac {
+  color: black;
+}
+.daa {
+  background-color: rgba(200, 16, 47, 0.5);
 }
