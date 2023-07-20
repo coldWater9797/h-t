@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+      .body{
+        width: auto;
+        height: 2000px;
+      }
+.expandable-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  &.open {
+    .excerpt {
+      max-height: 0;
+    }
+    .content {
+      max-height: 999em;
+    }
+  }
+  
+  &.animated {
+    .excerpt {
+      max-height: 0 !important;
+    }
+    .content {
+      min-height: 999em;
+    }
+  }
+  
+  .viewport {
+    padding: 1em 0;
+    overflow: hidden;
+    transition: max-height 1s, min-height 1s;
+  }
+  
+  .excerpt,
+  .content {
+    transition: opacity .1s;
+    
+
+    p:first-child { margin-top: 0; }
+    p:last-child { margin-bottom: 0; }
+  }
+  
+  .excerpt {
+    overflow: hidden;
+    
+    .show-more {
+      color: red;
+    }
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    
+    .show-less {
+      color: red;
+    }
+  }
+}
+    </style>
+</head>
+<body class="body">
+    <div class="expandable-content">
+        <div class="viewport">
+          <div class="excerpt">
+             <div class="inner">
+                <div class="Frame40" style="width: 1920px; height: 1000px; position: relative; background: white">
+                    <div class="News" style="width: 328px; height: 126px; left: 142px; top: 401px; position: absolute; color: black; font-size: 64px; font-family: 'Vollkorn SC'; font-weight: 400; line-height: 50px; letter-spacing: 3.20px; word-wrap: break-word">news</div>
+                    <a href="news/news1.html"><div class="03" style="width: 319px; height: 50px; left: 667px; top: 55px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.03        プライバシーマークを取得</div></a>
+                    <div class="Vector124" style="width: 1173px; height: 0px; left: 658px; top: 165px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                    <div class="Vector125" style="width: 1174px; height: 0px; left: 658px; top: 335px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                    <div class="Vector126" style="width: 1174px; height: 0px; left: 658px; top: 505px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                    <div class="Vector127" style="width: 1174px; height: 0px; left: 658px; top: 675px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                    <div class="Vector127" style="width: 1174px; height: 0px; left: 658px; top: 845px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                    <a href="news/news2.html"><div class="03" style="width: 679px; height: 50px; left: 667px; top: 225px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.03        会社資本金は１０００万円まで増資</div></a>
+                   <a href="news/news3.html"> <div class="02" style="width: 616px; height: 50px; left: 667px; top: 395px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.02        伊豆河津の早桜を鑑賞しました</div></a>
+                   <a href="news/news4.html"><div class="02" style="width: 710px; height: 50px; left: 667px; top: 565px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.12        沖縄への社員旅行を楽しんていました</div></a>
+                   <a href="news/news5.html"> <div class="12P" style="width: 981px; height: 50px; left: 667px; top: 735px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.11        個人情報管理体制を整え、Pマークの申請を提出しました</div></a>
+                  
+                    <div style="width: 122px; height: 53px; left: 142px; top: 500px; position: absolute; color: #0080FF; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">お知らせ</div>
+                    <div class="Vector128" style="width: 76px; height: 0px; left: 142px; top: 527px; position: absolute; border: 0.50px #0080FF solid"></div>
+                    <div class="Vector129" style="width: 0px; height: 900px; left: 601px; top: 10px; position: absolute; border: 0.50px #B0B0B0 solid"></div>
+                   
+                  </div>
+                  <span class="show-more toggle-content">Read More</span>
+            </div>
+          </div>
+      
+          <div class="content">
+           <div class="inner">
+            <div class="Frame40" style="width: 1920px; height: 1200px; position: relative; background: white">
+                <div class="News" style="width: 328px; height: 126px; left: 142px; top: 401px; position: absolute; color: black; font-size: 64px; font-family: 'Vollkorn SC'; font-weight: 400; line-height: 50px; letter-spacing: 3.20px; word-wrap: break-word">news</div>
+                <a href="news/news1.html"><div class="03" style="width: 319px; height: 50px; left: 667px; top: 55px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.03        プライバシーマークを取得</div></a>
+                <div class="Vector124" style="width: 1173px; height: 0px; left: 658px; top: 165px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <div class="Vector125" style="width: 1174px; height: 0px; left: 658px; top: 335px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <div class="Vector126" style="width: 1174px; height: 0px; left: 658px; top: 505px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <div class="Vector127" style="width: 1174px; height: 0px; left: 658px; top: 675px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <div class="Vector127" style="width: 1174px; height: 0px; left: 658px; top: 845px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <div style="width: 1174px; height: 0px; left: 658px; top: 1015px; position: absolute; border: 0.50px #DEDEDE solid"></div>
+                <a href="news/news2.html"><div class="03" style="width: 679px; height: 50px; left: 667px; top: 225px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.03        会社資本金は１０００万円まで増資</div></a>
+               <a href="news/news3.html"> <div class="02" style="width: 616px; height: 50px; left: 667px; top: 395px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2016.02        伊豆河津の早桜を鑑賞しました</div></a>
+               <a href="news/news4.html"><div class="02" style="width: 710px; height: 50px; left: 667px; top: 565px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.12        沖縄への社員旅行を楽しんていました</div></a>
+               <a href="news/news5.html"> <div class="12P" style="width: 981px; height: 50px; left: 667px; top: 735px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.11        個人情報管理体制を整え、Pマークの申請を提出しました</div></a>
+               <a href="news/news6.html"> <div class="12P" style="width: 981px; height: 50px; left: 667px; top: 905px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.07        社内日本語教育</div></a>
+               <a href="news/news7.html"> <div class="12P" style="width: 981px; height: 50px; left: 667px; top: 1075px; position: absolute; color: black; font-size: 15px; font-family: Alegreya SC; font-weight: 400; line-height: 50px; letter-spacing: 0.75px; word-wrap: break-word">2015.07        嵐山渓谷の自然</div></a>
+                <div style="width: 122px; height: 53px; left: 142px; top: 500px; position: absolute; color: #0080FF; font-size: 20px; font-family: Vollkorn SC; font-weight: 400; word-wrap: break-word">お知らせ</div>
+                <div class="Vector128" style="width: 76px; height: 0px; left: 142px; top: 527px; position: absolute; border: 0.50px #0080FF solid"></div>
+                <div class="Vector129" style="width: 0px; height: 1150px; left: 601px; top: 10px; position: absolute; border: 0.50px #B0B0B0 solid"></div>
+               
+              </div>
+              <span class="show-less toggle-content">Show Less</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="expandable-content">
+        <div class="viewport">
+          <div class="excerpt">
+             <div class="inner">
+               <p>I am a long block of text that needs to be toggled to show or hide the length of my content. I should animate smoothly to an open and closed position and my toggle should exist inline with my content. <span class="show-more toggle-content">Read More</span></p>
+            </div>
+          </div>
+      
+          <div class="content">
+           <div class="inner">
+             <p>I am a long block of text that needs to be toggled to show or hide the length of my content. I should animate smoothly to an open and closed position and my toggle should exist inline with my content.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qualem igitur hominem natura inchoavit? Nam nec vir bonus ac iustus haberi debet qui, ne malum habeat, abstinet se ab iniuria. Quid enim de amicitia statueris utilitatis causa expetenda vides. Bona autem corporis huic sunt, quod posterius posui, similiora. Ita redarguitur ipse a sese, convincunturque scripta eius probitate ipsius ac moribus. Pisone in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. </p>
+           <p>Duo Reges: constructio interrete. His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Varietates autem iniurasque fortunae facile veteres philosophorum praeceptis instituta vita superabat. Tanti autem aderant vesicae et torminum morbi, ut nihil ad eorum magnitudinem posset accedere. Summum ením bonum exposuit vacuitatem doloris; Haec para/doca illi, nos admirabilia dicamus. </p>
+           <p>Non dolere, inquam, istud quam vim habeat postea videro; Re mihi non aeque satisfacit, et quidem locis pluribus. Addidisti ad extremum etiam indoctum fuisse. Ne in odium veniam, si amicum destitero tueri. Quippe: habes enim a rhetoribus; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; </p>
+           <p>Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Haec para/doca illi, nos admirabilia dicamus. Quae in controversiam veniunt, de iis, si placet, disseramus. Quam si explicavisset, non tam haesitaret. Audax negotium, dicerem impudens, nisi hoc institutum postea translatum ad philosophos nostros esset. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Quod cum accidisset ut alter alterum necopinato videremus, surrexit statim. <span class="show-less toggle-content">Show Less</span></p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="expandable-content">
+        <div class="viewport">
+          <div class="excerpt">
+             <div class="inner">
+               <p>I am a long block of text that needs to be toggled to show or hide the length of my content. I should animate smoothly to an open and closed position and my toggle should exist inline with my content. <span class="show-more toggle-content">Read More</span></p>
+            </div>
+          </div>
+      
+          <div class="content">
+           <div class="inner">
+             <p>I am a long block of text that needs to be toggled to show or hide the length of my content. I should animate smoothly to an open and closed position and my toggle should exist inline with my content.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qualem igitur hominem natura inchoavit? Nam nec vir bonus ac iustus haberi debet qui, ne malum habeat, abstinet se ab iniuria. Quid enim de amicitia statueris utilitatis causa expetenda vides. Bona autem corporis huic sunt, quod posterius posui, similiora. Ita redarguitur ipse a sese, convincunturque scripta eius probitate ipsius ac moribus. Pisone in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. </p>
+           <p>Duo Reges: constructio interrete. His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Varietates autem iniurasque fortunae facile veteres philosophorum praeceptis instituta vita superabat. Tanti autem aderant vesicae et torminum morbi, ut nihil ad eorum magnitudinem posset accedere. Summum ením bonum exposuit vacuitatem doloris; Haec para/doca illi, nos admirabilia dicamus. </p>
+           <p>Non dolere, inquam, istud quam vim habeat postea videro; Re mihi non aeque satisfacit, et quidem locis pluribus. Addidisti ad extremum etiam indoctum fuisse. Ne in odium veniam, si amicum destitero tueri. Quippe: habes enim a rhetoribus; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; </p>
+           <p>Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. Haec para/doca illi, nos admirabilia dicamus. Quae in controversiam veniunt, de iis, si placet, disseramus. Quam si explicavisset, non tam haesitaret. Audax negotium, dicerem impudens, nisi hoc institutum postea translatum ad philosophos nostros esset. Scaevola tribunus plebis ferret ad plebem vellentne de ea re quaeri. Quod cum accidisset ut alter alterum necopinato videremus, surrexit statim. <span class="show-less toggle-content">Show Less</span></p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <script>
+        $expandable_content = $('.expandable-content');
+expand_animation_time = 1000;
+
+var calc_expandable_content = function() {
+  $expandable_content.each(function() {
+    var $container = $(this);
+    var $toggle = $container.find('.toggle-content');
+    var $excerpt_height = $container.find('.excerpt').outerHeight(true);
+
+    // set the min-height on the viewport element and recalc 
+    // all curret elements
+    $container.find('.viewport').css('max-height', $excerpt_height);
+    set_expandable_content_heights($container);
+
+    // first unbind any existing click handler
+    // then register the new one
+    $toggle.unbind('click').click(function() {
+      var $container = $(this).closest('.expandable-content');
+      $container.toggleClass('open');
+      set_expandable_content_heights($container);
+    });
+  });
+}
+var set_expandable_content_heights = function($target) {
+  var $excerpt = $target.find('.excerpt');
+  var $content = $target.find('.content');
+  var $viewport = $target.find('.viewport');
+  
+  if ( $target.hasClass('open') ) {
+    $viewport.css({
+      'max-height': $content.find('.inner').outerHeight(true)
+    });
+
+    window.setTimeout(function() {
+      $target.addClass('animated');
+      $viewport.css({
+        'min-height': $content.find('.inner').outerHeight(true)
+      });
+    }, expand_animation_time);
+  } else {
+    $viewport.css({
+      'max-height': $excerpt.find('.inner').outerHeight(true),
+      'min-height': $excerpt.find('.inner').outerHeight(true)
+    });
+
+    window.setTimeout(function() {
+      $target.removeClass('animated');
+    }, expand_animation_time);
+  }
+}
+
+calc_expandable_content();
+
+// you should find a more performant way to
+// do this. Throttle or debounce.
+$(window).resize(function() {
+  calc_expandable_content();
+})
+      </script>
+</body>
+</html>

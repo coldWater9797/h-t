@@ -227,3 +227,60 @@ div.nav > div a {
 .daa {
   background-color: rgba(200, 16, 47, 0.5);
 }
+.expandable-content {
+  width: 1243px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  &.open {
+    .excerpt {
+      max-height: 0;
+    }
+    .content {
+      max-height: 999em;
+    }
+  }
+  
+  &.animated {
+    .excerpt {
+      max-height: 0 !important;
+    }
+    .content {
+      min-height: 999em;
+    }
+  }
+  
+  .viewport {
+    padding: 1em 0;
+    overflow: hidden;
+    transition: max-height 1s, min-height 1s;
+  }
+  
+  .excerpt,
+  .content {
+    transition: opacity .1s;
+    
+
+    p:first-child { margin-top: 0; }
+    p:last-child { margin-bottom: 0; }
+  }
+  
+  .excerpt {
+    overflow: hidden;
+    
+    .show-more {
+      color: red;
+    }
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    
+    .show-less {
+      color: red;
+    }
+  }
+}
