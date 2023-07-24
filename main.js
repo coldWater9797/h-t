@@ -34,7 +34,7 @@ $(window).scroll(function () {
 
 //Click and scrolls top effect
 $(".scrollToTop").click(function () {
-  $("html, body").animate({ scrollTop: 0 }, 800)
+  $("html, body").animate({ scrollTop: 0 }, 150)
   return false
 })
 
