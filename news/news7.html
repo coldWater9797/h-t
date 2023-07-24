@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-   body {
+body {
+ /* 禁止水平滚动条出现 */
+  overflow-x: hidden;
+  /* 去除body的默认边距，防止右边出现空白 */
   margin: 0;
-  padding: 0;
-  font-family: Poppins;
+  /* 设置body的宽度和高度 */
+  width: 100vw;
+  height: 100vh;
 }
 /* def */
 .navbar {
