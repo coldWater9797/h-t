@@ -255,37 +255,46 @@
             });
 
             
-    var form = document.getElementById("my-form");
+            var form = document.getElementById("my-form");
     
     async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        var checkbox = document.querySelector('input[type="checkbox"]');
+        
+        if (!checkbox.checked) {
+            // 使用alert函数显示提示弹窗
+            alert("「個人情報に関する同意書」を同意するうえ、送信をお願い申し上げます");
+            return; // 阻止表单提交
         }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
-          form.reset();
-          $('.cont-flip').toggleClass('flipped');
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
             }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset();
+                $('.cont-flip').toggleClass('flipped');
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
     }
-    form.addEventListener("submit", handleSubmit)
+
+    form.addEventListener("submit", handleSubmit);
 
         </script>
 </body>
