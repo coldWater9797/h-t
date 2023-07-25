@@ -1,4 +1,4 @@
-  /* Webkit内核浏览器滚动条样式 */
+  /* Webkit内核浏览器滚动条样式
   ::-webkit-scrollbar {
     background: rgba(255, 255, 255, 0.2);
     height: 16px;
@@ -29,7 +29,7 @@
   
   ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(0, 0, 0, 0.2);
-  }
+  } */
   
 body {
  /* 禁止水平滚动条出现 */
